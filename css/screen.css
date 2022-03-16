@@ -4,12 +4,28 @@
     Default markup for page level elements
 */
 
+@font-face {
+    font-family: "Inter Web";
+    font-weight: 400;   /*regular*/
+    src: url("../fonts/Inter-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Inter Web";
+    font-weight: 700;
+    src: url("../fonts/Inter-Bold.woff2") format("woff2");
+}
+
 html {
+    font-family: "droid-serif", serif;
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
-    color: #111;
+    /*font-family: "Inter Web", sans-serif;*/
+    color: #5C6366;
     padding: 48px 24px 24px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
 }
 
 body {
@@ -47,24 +63,34 @@ img {
     Default markup for typographic elements
 */
 
+h1, h2, h3{
+font-family: "inter web", sans-serif;
+}
+
+
 h1 {
-    font-family: "Times New Roman", serif;
     font-size: 36px;
     font-weight: normal;
     line-height: 40px;
     margin: 0 0 24px;
+    color: #17181A;
 }
 
 h2 {
     font-size: 23px;
     line-height: 32px;
     margin: 0 0 24px;
+    color: #000000;
+}
+*+h2{
+    margin-top: 48px;
 }
 
 h3 {
     font-size: 18px;
     line-height: 24px;
     margin: 0 0 24px;
+    color: #000000;
 }
 
 h4,
@@ -73,6 +99,7 @@ h6 {
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 24px;
+    color: #000000;
 }
 
 p,
@@ -123,18 +150,18 @@ hr {
 }
 
 a {
-    color: RoyalBlue;
+    color: #00a1e6;
     transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: BlueViolet;
+    color: #00a1e6;
 }
 
 a:hover,
 a:focus {
-    color: Crimson;
+    color: #4dc9ff;
 }
 
 /* Small devices (landscape phones, 576px and up) */
