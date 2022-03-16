@@ -73,6 +73,7 @@ h1 {
     font-weight: normal;
     line-height: 40px;
     margin: 0 0 24px;
+    font-family: "Playfair Display", serif;
     color: #17181A;
 }
 
@@ -164,8 +165,67 @@ a:focus {
     color: #4dc9ff;
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/*
+component: author
+*/
+.c-author{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
 
+.c-author__avatar{
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+}
+
+.c-author__name,
+.c-author__title{
+    margin-bottom: 0;
+}
+.c-author__name{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.c-author__title{
+    font-size: 14px;
+    font-family: "Inter Web", sans-serif;
+    line-height: 24px;
+}
+
+/*
+component: article
+*/
+.c-article__header,
+.c-article__body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.c-article__header{
+    padding: 24px;
+}
+.c-article__title {
+    padding: 24px;
+}
+
+@media (min-width: 768px) {
+    .c-article__header {
+        padding: 48px;
+    }
+
+    .c-article__body {
+        padding: 24px 48px;
+    }
+
+    .c-article__aside {
+        padding: 24px;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {}
 
 /* Medium devices (tablets, 768px and up) */
@@ -182,7 +242,23 @@ a:focus {
 
 /* Large devices (landscape tablets, desktops, 992px and up) */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .c-author{
+        display: flex;
+        gap: 24px
+    }
+    .c-article__body {
+        padding: 48px 48px 24px;
+    }
+
+    .c-article__author {
+        width: 25%;
+    }
+
+    .c-article__content {
+        width: 75%;
+    }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 
